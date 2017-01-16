@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="pragma" content="no-cache"> -->  <!-- 取消loading页面的缓存 -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/loading.css">
+    <script type="text/javascript">
+    window.nodeRequire = require;
+    delete window.require;
+    delete window.exports;
+    delete window.module;
+    </script>
+    <script type="text/javascript" src="js/jquery/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/mm/boot.js"></script>
+    <script type="text/javascript" src="js/mm/locale.js"></script>
+
+
+</head>
+
+<body>
+    <div id="progressMask">
+        <p style="text-align: center;color: rgb(167, 166, 166);font-weight: 600;" key='CHECKING_FILE'></p>
+        <div class="progress" style="border-radius: 5px">
+            <b class="progress__bar progress__bar--orange" style="opacity: 1;border-radius: inherit;">
+                <span class="progress__text" style="text-align: center;width: 300px;">
+                  <span key="LOADING"></span><em>0%</em>
+                </span>
+            </b>
+        </div>
+        <div id="mask"></div>
+        <!-- 提示层遮罩 -->
+        <div id="upgrade">
+            <div class="title" key='UPDATE'>升级提醒</div>
+            <div class="content">
+                <p class="gray" key='UPDATE_INTRO'>全新的SG Gaming客户端已经准备完毕，此版本需要重新下载和安装。</p>
+                <p class="gray" key='UPDATE_CONTENT'>更新内容：</p>
+                <p class="gray" key='UPDATE_INFO1'>1. 修复部分问题</p>
+                <p class="gray" key='UPDATE_INFO2'>2. 优化部分用户体验</p>
+            </div>
+            <div class="confirmContent">
+                <a id="ok" key='CONFIRM'>确定</a>
+                <a id="cancel" key='CANCEL'>取消</a>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/loading.js"></script>
+</body>
+
+</html>

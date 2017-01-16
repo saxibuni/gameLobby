@@ -1,0 +1,18 @@
+d:\Documents\Visual Studio 2012\Projects\uninstall\uninstall\bin\Debug\uninstall.exe.config
+d:\Documents\Visual Studio 2012\Projects\uninstall\uninstall\bin\Debug\uninstall.exe
+d:\Documents\Visual Studio 2012\Projects\uninstall\uninstall\bin\Debug\uninstall.pdb
+d:\Documents\Visual Studio 2012\Projects\uninstall\uninstall\obj\Debug\uninstall.Form1.resources
+d:\Documents\Visual Studio 2012\Projects\uninstall\uninstall\obj\Debug\uninstall.Properties.Resources.resources
+d:\Documents\Visual Studio 2012\Projects\uninstall\uninstall\obj\Debug\uninstall.csproj.GenerateResource.Cache
+d:\Documents\Visual Studio 2012\Projects\uninstall\uninstall\obj\Debug\uninstall.exe
+d:\Documents\Visual Studio 2012\Projects\uninstall\uninstall\obj\Debug\uninstall.pdb
+d:\Documents\Visual Studio 2012\Projects\uninstall\uninstall\obj\Debug\uninstall.csprojResolveAssemblyReference.cache
+E:\web\spade_pc\new\winform project\uninstall\uninstall\bin\Debug\uninstall.exe.config
+E:\web\spade_pc\new\winform project\uninstall\uninstall\obj\Debug\uninstall.exe
+E:\web\spade_pc\new\winform project\uninstall\uninstall\obj\Debug\uninstall.pdb
+E:\web\spade_pc\new\winform project\uninstall\uninstall\bin\Debug\uninstall.exe
+E:\web\spade_pc\new\winform project\uninstall\uninstall\bin\Debug\uninstall.pdb
+E:\web\spade_pc\new\winform project\uninstall\uninstall\obj\Debug\uninstall.Form1.resources
+E:\web\spade_pc\new\winform project\uninstall\uninstall\obj\Debug\uninstall.Properties.Resources.resources
+E:\web\spade_pc\new\winform project\uninstall\uninstall\obj\Debug\uninstall.csproj.GenerateResource.Cache
+E:\web\spade_pc\new\winform project\uninstall\uninstall\obj\Debug\uninstall.csprojResolveAssemblyReference.cache

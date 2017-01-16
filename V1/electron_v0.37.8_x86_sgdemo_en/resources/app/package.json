@@ -1,0 +1,12 @@
+{
+	"name": "SG Gaming",
+  	"main": "main.js",
+  	"description": "SG gaming",
+  	"author": "SG gaming",
+  	"license": "ISC",
+
+  	"version": "1.0.1",
+  	"merchantCode" : "sgdemo",
+	"lobbyUrl" : "http://www.spadebar.net/pc_version/www/1.0.1/",
+	"language" : "english"
+}

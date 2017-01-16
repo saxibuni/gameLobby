@@ -1,0 +1,94 @@
+#progressMask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(images/loading_bg.jpg);
+    padding: 165px 20px 0 20px;
+}
+
+#mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+
+#upgrade {
+    width: 280px;
+    height: 205px;
+    position: fixed;
+    top: calc(50% - 100px);
+    left: calc(50% - 140px);
+    background-color: white;
+    display: block;
+    border-radius: 5px;
+    z-index: 102;
+    font-family: Arial, 微软雅黑;
+    display: none;
+}
+
+#upgrade > .title {
+    border-bottom: 1px solid rgb(236, 237, 237);
+    height: 40px;
+    line-height: 40px;
+    color: rgb(34, 34, 34);
+    text-align: center;
+    font-weight: bold;
+    color: rgb(100, 100, 100);
+}
+
+#upgrade > .content {
+    box-sizing: border-box;
+    padding: 2px 8px;
+    width: 100%;
+    border-bottom: 0.5px solid rgb(236, 237, 237);
+    color: rgb(34, 34, 34);
+    font-size: 13px;
+}
+
+#upgrade > .content > p {
+    margin: 4px 0px;
+    padding: 0;
+    line-height: 19px;
+}
+
+#upgrade > .content > .gray {
+    color: rgb(125, 125, 125);
+}
+
+#upgrade .confirmContent {
+    padding: 3px 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#upgrade .confirmContent a {
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #09f;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#upgrade .confirmContent a:hover {
+    background: rgb(70, 178, 254);
+    color: white;
+}
+
+#upgrade #ok {
+    float: left;
+    width: 130px;
+}
+
+#upgrade #cancel {
+    float: right;
+    width: 129px;
+}

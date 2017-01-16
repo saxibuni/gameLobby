@@ -1,0 +1,11 @@
+教程：
+	用Electron（Atom编辑器的兄弟项目）开发桌面应用 ：http://www.liuhaihua.cn/archives/124970.html
+
+	github： https://github.com/atom/electron
+
+	http://eyas.leanote.com/post/get-start-electron
+
+	http://electron.atom.io/
+
+	
+二进制文件下载地址： http://electron.atom.io/releases.html	

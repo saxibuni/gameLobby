@@ -1,0 +1,18 @@
+d:\Documents\Visual Studio 2012\Projects\mainProgram\mainProgram\bin\Debug\mainProgram.exe.config
+d:\Documents\Visual Studio 2012\Projects\mainProgram\mainProgram\bin\Debug\mainProgram.exe
+d:\Documents\Visual Studio 2012\Projects\mainProgram\mainProgram\bin\Debug\mainProgram.pdb
+d:\Documents\Visual Studio 2012\Projects\mainProgram\mainProgram\obj\Debug\mainProgram.Form1.resources
+d:\Documents\Visual Studio 2012\Projects\mainProgram\mainProgram\obj\Debug\mainProgram.Properties.Resources.resources
+d:\Documents\Visual Studio 2012\Projects\mainProgram\mainProgram\obj\Debug\mainProgram.csproj.GenerateResource.Cache
+d:\Documents\Visual Studio 2012\Projects\mainProgram\mainProgram\obj\Debug\mainProgram.exe
+d:\Documents\Visual Studio 2012\Projects\mainProgram\mainProgram\obj\Debug\mainProgram.pdb
+d:\Documents\Visual Studio 2012\Projects\mainProgram\mainProgram\obj\Debug\mainProgram.csprojResolveAssemblyReference.cache
+E:\web\spade_pc\new\winform project\mainProgram\mainProgram\bin\Debug\mainProgram.exe.config
+E:\web\spade_pc\new\winform project\mainProgram\mainProgram\obj\Debug\mainProgram.exe
+E:\web\spade_pc\new\winform project\mainProgram\mainProgram\obj\Debug\mainProgram.pdb
+E:\web\spade_pc\new\winform project\mainProgram\mainProgram\bin\Debug\mainProgram.exe
+E:\web\spade_pc\new\winform project\mainProgram\mainProgram\bin\Debug\mainProgram.pdb
+E:\web\spade_pc\new\winform project\mainProgram\mainProgram\obj\Debug\mainProgram.Form1.resources
+E:\web\spade_pc\new\winform project\mainProgram\mainProgram\obj\Debug\mainProgram.Properties.Resources.resources
+E:\web\spade_pc\new\winform project\mainProgram\mainProgram\obj\Debug\mainProgram.csproj.GenerateResource.Cache
+E:\web\spade_pc\new\winform project\mainProgram\mainProgram\obj\Debug\mainProgram.csprojResolveAssemblyReference.cache

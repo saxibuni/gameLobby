@@ -1,0 +1,18 @@
+{
+	"versionPath" : "20160428",
+	"versionObj_mac" : {
+		"sgdemo" : "1.0.0",
+		"SS88" : "1.0.0",
+		"lft" : "1.0.0"	
+	},
+	"versionObj_win" : {
+		"sgdemo" : "1.0.1",
+		"SS18" : "1.0.1",
+		"SS28" : "1.0.1",
+		"SS48" : "1.0.1",
+		"SS88" : "1.0.1",		
+		"SS99" : "1.0.1",
+		"lft" : "1.0.0"
+	},
+	"bineryDownloadUrl" :  "http://www.spadebar.net/"
+}

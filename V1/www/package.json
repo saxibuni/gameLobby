@@ -1,0 +1,12 @@
+{
+	"name": "SG Gaming",
+  	"main": "main.js",
+  	"description": "SG gaming",
+  	"author": "SG gaming",
+  	"license": "ISC",
+
+  	"version": "1.0.0",
+  	"merchantCode" : "lft",
+	"lobbyUrl" : "http://192.168.0.61:8080/spade_pc/www/",
+	"language" : "chinese"
+}

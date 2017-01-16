@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C9847783-F89F-41C8-862E-14C59F318624}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>mainProgram</RootNamespace>
+    <AssemblyName>mainProgram</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon\368cash.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BZip2\BZip2.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BZip2\BZip2Constants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BZip2\BZip2Exception.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BZip2\BZip2InputStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BZip2\BZip2OutputStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Checksums\Adler32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Checksums\CRC32.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Checksums\IChecksum.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Checksums\StrangeCRC.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\FileSystemScanner.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\INameTransform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\IScanFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\NameFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\PathFilter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\StreamUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Core\WindowsPathUtils.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Encryption\PkzipClassic.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Encryption\ZipAESStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Encryption\ZipAESTransform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Exception\SharpZipBaseException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FileUnZip.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GZip\GZIPConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GZip\GZipException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GZip\GzipInputStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="GZip\GzipOutputStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Language.cs" />
+    <Compile Include="Lzw\LzwConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lzw\LzwException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Lzw\LzwInputStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="PackageClass.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tar\InvalidHeaderException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tar\TarArchive.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tar\TarBuffer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tar\TarEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tar\TarException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tar\TarHeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tar\TarInputStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tar\TarOutputStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\Compression\Deflater.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\Compression\DeflaterConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\Compression\DeflaterEngine.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\Compression\DeflaterHuffman.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\Compression\DeflaterPending.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\Compression\Inflater.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\Compression\InflaterDynHeader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\Compression\InflaterHuffmanTree.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\Compression\PendingBuffer.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\Compression\Streams\DeflaterOutputStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\Compression\Streams\InflaterInputStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\Compression\Streams\OutputWindow.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\Compression\Streams\StreamManipulator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\FastZip.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\IEntryFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\WindowsNameTransform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\ZipConstants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\ZipEntry.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\ZipEntryFactory.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\ZipException.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\ZipExtraData.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\ZipFile.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\ZipHelperStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\ZipInputStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\ZipNameTransform.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Zip\ZipOutputStream.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="icon\368cash.ico" />
+    <Content Include="resource\check_info.gif" />
+    <Content Include="resource\start_cn.png" />
+    <Content Include="resource\update_us.png" />
+    <Content Include="resource\update_cn.png" />
+    <Content Include="resource\start_us.png" />
+    <None Include="resource\load.png" />
+    <None Include="resource\progress.png" />
+    <Content Include="icon\sgdemo.ico" />
+    <Content Include="icon\ss88.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <!-- 兼容web的导入方式 -->
+    <script type="text/javascript">
+    window.nodeRequire = require;
+    delete window.require;
+    delete window.exports;
+    delete window.module;
+    </script>
+    <!--  electron的导入方式 -->
+    <!--<script type="text/javascript">
+        window.$ = window.jQuery = require('./js/jquery/jquery-2.1.1.min.js');
+    </script> -->
+    <script type="text/javascript" src="js/jquery/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/mm/boot.js"></script>
+    <script type="text/javascript" src="js/mm/service.js"></script>
+    <script type="text/javascript" src="js/mm/locale.js"></script>
+    <script type="text/javascript" src="js/rsa/RSA.js"></script>
+    <script type="text/javascript" src="js/rsa/Barrett.js"></script>
+    <script type="text/javascript" src="js/rsa/BigInt.js"></script>
+    <script type="text/javascript" src="js/mm/storage.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="leftContainer">
+            <div class="top">
+                <img src="css/images/logo.png">
+            </div>
+            <div class="middle" style="display:block;">
+                <nav>
+                    <ul id="nav">
+                       <!-- <li><a href="javascript:;" key="NEW"></a></li>
+                        <li><a href="javascript:;" key="TOP"></a></li>
+                        <li><a href="javascript:;" key="FEATURED"></a></li>
+                        <li><a href="javascript:;" key="PROGRESSIVE"></a></li>
+                        <li><a href="javascript:;" key="SLOT"></a></li>
+                        <li><a href="javascript:;" key="TABLE"></a></li>
+                        <li><a href="javascript:;" key="ARCADE"></a></li>
+                        <li><a href="javascript:;" key="FAVORITE"></a></li>-->
+                        <li><a href="javascript:;" key="ALL"></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="bottom">
+                <div class="searchZoom">
+                    <div style="float: right;" id="searchGame"><img src="css/images/search.png"></div>
+                    <div style="width:150px;float:right;">
+                        <input type="text" placeholder="RISING" id="gameName" />
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+                <div class="subMenu">
+                    <div>
+                        <!--<a href="javascript:;" style="background: url(css/images/money.png) no-repeat" class="recharge"></a>-->
+                    </div>
+                    <div>
+                       <!-- <a href="javascript:;" class="soundToggle soundon"></a>-->
+                    </div>
+                    <div>
+                        <!--<a href="javascript:;" style="background: url(css/images/message.png) no-repeat" class="customerService"></a>-->
+                        <!--<a href="javascript:;" style="background: url(css/images/changePwd.png) no-repeat" class="customerService"></a>-->
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="rightContainer">
+            <div class="topMenu">
+                <img src="css/images/member.png"><span id="memberName" style="margin-left:60px;"></span>
+                <span style="margin-left:10px;" key="BALANCE"></span><span style="color:red" id="balance"></span>
+                <a href="javascript:;" style="background:url(css/images/close.png);background-size: 100% 100%" id="closeWin"></a>
+                <a href="javascript:;" id="fullscreenToggle" class="normalScreen"></a>
+                <!--<a href="javascript:;" id="logout" class="logout"></a>-->
+                <a href="javascript:;" id="oper_pick" class="oper_pick"></a>
+                <div class="moneyInfo" style="display:none;">
+                    <span key="FUNDS"></span>
+                    <img src="css/images/money.png">
+                </div>
+            </div>
+            <div class="timeMenu">
+                <span id="currentTime"></span>
+            </div>
+            <div class="rollResultItem">
+                <div class="rollItemDiv">
+                    <ul>
+                        <!--
+                        <li>
+                            <span>WOW JACKPOT: </span>
+                            <span style="color: rgb(151,38,17);">MYR12345678</span>
+                        </li>
+                        -->
+                    </ul>
+                    <ul style="display: none;"></ul>
+                    <!--  辅助dom -->
+                </div>
+                <div class="down" id="expand"><img src="css/images/down.png"></div>
+            </div>
+            <span class="currentSelect" key="NEW"></span>
+            <div class="gameContainer">
+                <ul>
+                    <!--
+                    <li>
+                        <div>
+                            <img src="css/images/game/Big-Prosperity.jpg">
+                            <a class="favorites">
+                                <img src="css/images/bttn_fav_on.png">
+                            </a>
+                            <div></div>
+                        </div>
+                    </li>
+                    -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div style="position: absolute;top: 0;left: 0;height: 30px;width: 100px;line-height: 30px;font-family: Arial;color: gray;font-size: 13px;padding-left: 5px;">
+        <span style="font-size: 17px;font-weight: bold;">ver</span>
+        <span id='version' style="font-weight: bolder;">20160617</span>
+    </div>
+
+    <!--修改密码-->
+    <div class="changePwdCover" style="display: none">
+        <div class="changePwdContainer">
+            <form class="changePwdForm">
+                <h4 key="CHANGEPWDTITLE">CREATE A NEW PASSWORD</h4>
+                <div>
+                    <label key="CURRPWDLABEL">Current Password</label>
+                    <input key="CURRPWD" type="password" id="pwd_current" placeholder="input current passworld" maxlength="32" onkeyup="value=value.replace(/[^\w\.\/]/ig,'')"/>
+                </div>
+                <div id="newPwd">
+                    <label key="NEWPWDLABEL">New Password</label>
+                    <input key="NEWPWD" type="password" id="pwd_new" placeholder="input new passworld" maxlength="32" onkeyup="value=value.replace(/[^\w\.\/]/ig,'')"/>
+                </div>
+                <div id="newPwdConfirm">
+                    <label key="CONFIRMPWDLABEL">Confirm New Password</label>
+                    <input key="CONFIRMPWD" type="password" id="pwd_confirm" placeholder="confirm new passworld" maxlength="32" onkeyup="value=value.replace(/[^\w\.\/]/ig,'')"/>
+                </div>
+                <div id="changepwd_btnDiv">
+                    <strong key="CHANGEOK" class="btnOk">Ok</strong>
+                    <strong key="CHANGECANCEL" class="btnCancel">Cancel</strong>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <!--操作弹框-->
+    <div class="setOperCover" style="display:none;">
+        <div class="checkOper">
+            <form class="checkOper_form">
+                <div><strong key="OPER_TITLE">OPTIONS</strong><em class="optionClose"></em></div>
+                <ul class="checkOper_list">
+                    <li><strong key="OPER_SOUND">Sound</strong><em id="soundToggle" class="btn_off"></em></li>
+                    <li><strong key="OPER_LOGINOUT">Login out</strong><em id="logout" class="btn_exit"></em></li>
+                    <li id="isChangePwd"><strong key="OPER_CHANGPWD">Change Password</strong><em class="btn_chang"></em></li>
+                </ul>
+            </form>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
